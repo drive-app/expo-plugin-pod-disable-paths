@@ -4,6 +4,7 @@ const path = require('path')
 const { withDangerousMod, withPlugins } = require('@expo/config-plugins')
 
 const withDisablePodInputOutputPaths = c => {
+  console.log("> :disable_input_output_paths => true");
   return withDangerousMod(c, [
     'ios',
     async config => {
